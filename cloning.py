@@ -9,11 +9,10 @@ print ("| WEBSITE  : termux.id               |")
 print ("| Youtube  : OmalipTv                |")
 print ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 class YC:
-    def __init__(self, email, pw):
-        self.email = email
-        self.pw = pw
+    def __init__(self):
+        self.t = tok
         try:
-            self.token = self.__getToken()['access_token']
+            self.token = self.t()['access_token']
             print ("\033[31m[\033[32m!\033[31m] \033[39mLogin Berhasil")
             print ("\033[36m" + 50*"-")
             print ("\033[36m|" + 11*" " + "\033[35mEmail" + 11*" " + "\033[36m|" + 8*" " + "\033[33mVuln" + 8*" " + "\033[36m|")
